@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="zh" data-default-color-scheme=auto>
+<html lang="zh-CN" data-default-color-scheme=auto>
 
 
 
@@ -20,7 +20,7 @@
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -68,6 +68,34 @@
       <div class="animated-icon"><span></span><span></span><span></span></div>
     </button>
 
+    
+<div id="he-plugin-simple"></div>
+<script>
+WIDGET = {
+  "CONFIG": {
+    "modules": "01234",
+    "background": "5",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "FFFFFF",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "fixed": "false",
+    "vertical": "top",
+    "horizontal": "left",
+    "key": "57db3b851d144b1f985d0575bcde8729"
+  }
+}
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+
+
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto text-center">
@@ -79,7 +107,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/">
                 <i class="iconfont icon-home-fill"></i>
-                Startseite
+                首页
               </a>
             </li>
           
@@ -91,7 +119,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/archives/">
                 <i class="iconfont icon-archive-fill"></i>
-                Archiv
+                归档
               </a>
             </li>
           
@@ -103,7 +131,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/">
                 <i class="iconfont icon-category-fill"></i>
-                Kategorie
+                分类
               </a>
             </li>
           
@@ -115,7 +143,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/tags/">
                 <i class="iconfont icon-tags-fill"></i>
-                Etiketten
+                标签
               </a>
             </li>
           
@@ -127,7 +155,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/">
                 <i class="iconfont icon-user-fill"></i>
-                Über mich
+                关于
               </a>
             </li>
           
@@ -188,6 +216,45 @@
   <div class="row mx-auto index-card">
     
     
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2022/05/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_self">
+          <img src="/img/1.jpg" srcset="/img/loading.gif" lazyload alt="测试文章">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2022/05/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_self">
+          测试文章
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2022/05/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/" target="_self">
+          
+          芭比Q啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-05-09 23:13" pubdate>
+              2022-05-09
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
@@ -241,7 +308,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -250,7 +317,7 @@
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
           <label data-error="x" data-success="v"
-                 for="local-search-input">Stichwort</label>
+                 for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -265,6 +332,42 @@
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    <!--《添加网站运行时间 -->
+<br/>
+
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+var now = new Date(); 
+
+function createtime() {
+    //此处修改你的建站时间或者网站上线时间
+    var grt = new Date('05/09/2022 18:00:00');
+    now.setTime(now.getTime() + 250);
+    days = (now - grt) / 1000 / 60 / 60 / 24;
+
+    dnum = Math.floor(days);
+    hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+        hnum = "0" + hnum;
+    }
+    minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+        mnum = "0" + mnum;
+    }
+    seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+        snum = "0" + snum;
+    }
+    document.getElementById("timeDate").innerHTML = " 本站已各种夹缝中安全运行 " + dnum + " 天 ";
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+}
+setInterval("createtime()", 250);
+</script>
+
+<!-- 添加网站运行时间》-->
   </div>
   
 
