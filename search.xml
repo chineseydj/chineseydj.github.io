@@ -19,6 +19,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title>测试文章</title>
+    <url>/2022/05/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="芭比Q"><a href="#芭比Q" class="headerlink" title="芭比Q"></a>芭比Q</h2><p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
+]]></content>
+  </entry>
+  <entry>
     <title>RabbitMQ</title>
     <url>/2022/05/10/RabbitMQ/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-消息队列"><a href="#1-消息队列" class="headerlink" title="1. 消息队列"></a>1. 消息队列</h1><h2 id="1-1-MQ的相关概念"><a href="#1-1-MQ的相关概念" class="headerlink" title="1.1. MQ的相关概念"></a>1.1. MQ的相关概念</h2><h3 id="1-1-1-什么是MQ"><a href="#1-1-1-什么是MQ" class="headerlink" title="1.1.1. 什么是MQ"></a>1.1.1. 什么是MQ</h3><p>MQ(message queue)，从字面意思上看，本质是个队列，FIFO 先入先出，只不过队列中存放的内容是message 而已，还是一种跨进程的通信机制，用于上下游传递消息。在互联网架构中，MQ 是一种非常常见的上下游“逻辑解耦+物理解耦”的消息通信服务。使用了 MQ 之后，消息发送上游只需要依赖 MQ，不用依赖其他服务</p>
@@ -193,11 +199,5 @@
         <tag>rabbitmq</tag>
         <tag>微服务</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>测试文章</title>
-    <url>/2022/05/09/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="芭比Q"><a href="#芭比Q" class="headerlink" title="芭比Q"></a>芭比Q</h2><p>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊</p>
-]]></content>
   </entry>
 </search>
